@@ -1,4 +1,4 @@
-from python import stats
+from python_project import stats
 
 def test_moving_average_basic():
     assert stats.moving_average([1,2,3,4], window=2) == [1.0, 1.5, 2.5, 3.5]

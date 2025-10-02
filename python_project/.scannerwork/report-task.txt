@@ -1,0 +1,6 @@
+projectKey=tp05-python
+serverUrl=http://localhost:9000
+serverVersion=10.6.0.92116
+dashboardUrl=http://localhost:9000/dashboard?id=tp05-python
+ceTaskId=d1c9fe36-eb68-499d-bf8b-6ff356c1ddd6
+ceTaskUrl=http://localhost:9000/api/ce/task?id=d1c9fe36-eb68-499d-bf8b-6ff356c1ddd6
