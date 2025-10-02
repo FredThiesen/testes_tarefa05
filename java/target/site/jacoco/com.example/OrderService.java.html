@@ -23,15 +23,15 @@ import java.util.*;
     }
 
     public void removeOrder(int id) {
-<span class="nc" id="L26">        orders.remove(id);</span>
-<span class="nc" id="L27">    }</span>
+<span class="fc" id="L26">        orders.remove(id);</span>
+<span class="fc" id="L27">    }</span>
 
     public int countOrders() {
 <span class="fc" id="L30">        return orders.size();</span>
     }
 
     public String riskyConcatSQL(String userInput) {
-<span class="nc" id="L34">        return &quot;SELECT * FROM orders WHERE name = '&quot; + userInput + &quot;'&quot;;</span>
+<span class="fc" id="L34">        return &quot;SELECT * FROM orders WHERE name = '&quot; + userInput + &quot;'&quot;;</span>
     }
 
     public void duplicateLogic(int x) {
