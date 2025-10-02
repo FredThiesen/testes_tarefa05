@@ -1,8 +1,11 @@
 package com.example;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.*;
 
 public class OrderService {
+    private static final Logger log = LoggerFactory.getLogger(OrderService.class);
     private Map<Integer, String> orders = new HashMap<>();
 
     public void addOrder(int id, String description) {
@@ -10,7 +13,7 @@ public class OrderService {
             throw new IllegalArgumentException("Order already exists: " + id);
         }
         if (description == null || description.trim().isEmpty()) {
-            System.out.println("Warning: empty description");
+            log.warn("Warning: empty description");
         }
         orders.put(id, description);
     }
@@ -32,12 +35,12 @@ public class OrderService {
     }
 
     public void duplicateLogic(int x) {
-        if (x > 10) { System.out.println("Big number"); }
-        else { System.out.println("Small number"); }
+        if (x > 10) { log.info("Big number"); }
+        else { log.info("Small number"); }
     }
 
     public void duplicateLogic2(int x) {
-        if (x > 10) { System.out.println("Big number"); }
-        else { System.out.println("Small number"); }
+        if (x > 10) { log.info("Big number"); }
+        else { log.info("Small number"); }
     }
 }
